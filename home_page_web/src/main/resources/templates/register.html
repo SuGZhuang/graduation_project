@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>注册</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="" />
+<link href="registerjc/css/font-awesome.min.css" th:href="@{/registerjc/css/font-awesome.min.css}" rel="stylesheet" type="text/css" media="all">
+<link href="registerjc/css/style.css" th:href="@{/registerjc/css/style.css}" rel="stylesheet" type="text/css" media="all"/>
+<link href="http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900" rel="stylesheet">
+</head>
+<body>
+
+<div class="signupform">
+	<h1> </h1>
+	<div class="container">
+		<div class="agile_info">
+			<div class="w3l_form">
+				<div class="left_grid_info">
+					<h3>你好！</h3>
+					<h4>先注册在登陆，如已有账号，请先登录。</h4>
+					<p></p>
+				</div>
+			</div>
+			<div class="w3_info">
+				<h2>让我们创建一个账号</h2>
+				<p>欢迎加入我们</p>
+						<form action="auth/register" method="post">
+						<div class="input-group">
+							<span><i class="fa fa-user" aria-hidden="true"></i></span>
+							<input type="text" name="uname" placeholder="用户名" required="">
+						</div>
+						<div class="input-group">
+							<span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+							<input type="email" name="uemail" placeholder="邮箱" required="">
+						</div>
+						<div class="input-group">
+							<span><i class="fa fa-lock" aria-hidden="true"></i></span>
+							<input type="Password" placeholder="密码" required="">
+						</div>
+						<div class="input-group">
+							<span><i class="fa fa-lock" aria-hidden="true"></i></span>
+							<input type="Password" name="upassword" placeholder="确认密码" required="">
+						</div>
+							<button class="btn btn-danger btn-block" type="submit">创建账号</button >
+					</form>
+			</div>
+			<div class="clear"></div>
+			</div>
+			</div>
+			<div class="footer">
+			<p>Copyright &copy; 2018.Company 毕设.</p>
+ 			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  		<title>Welcome to Photography Website</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="homepagejc/css/bootstrap.min.css" th:href="@{/homepagejc/css/bootstrap.min.css}">
+        <link rel="stylesheet" href="homepagejc/css/bootstrap-theme.min.css" th:href="@{/homepagejc/css/bootstrap-theme.min.css}">
+        <link rel="stylesheet" href="homepagejc/css/fontAwesome.css" th:href="@{/homepagejc/css/fontAwesome.css}">
+        <link rel="stylesheet" href="homepagejc/css/light-box.css" th:href="@{/homepagejc/css/light-box.css}">
+        <link rel="stylesheet" href="homepagejc/css/search.css" th:href="@{/homepagejc/css/search.css}">
+        <link rel="stylesheet" href="homepagejc/css/templatemo-style.css" th:href="@{/homepagejc/css/templatemo-style.css}">
+
+        <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+        <script type="text/javascript" src="homepagejc/js/angular.min.js" th:src="@{/homepagejc/js/angular.min.js}"></script>
+        <script src="homepagejc/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js" th:src="@{/homepagejc/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js}"></script>
+
+
+    </head>
+
+    <script>
+        let app = angular.module('homepagephoto', []);
+
+        app.controller('crud', function($scope, $http) {
+            $http({
+                method: 'get',
+                url: 'homePage/getHomePagePhoto'
+            }).then(function successCallback(response) {
+                $scope.photos=response.data;
+            }, function errorCallback(response) {
+                $scope.photos=response.data;
+            });
+
+        });
+
+    </script>
+
+<body ng-app="homepagephoto" ng-controller="crud">
+
+    <nav>
+        <div class="logo">
+            <a href="login.html" th:disabled="${status}" th:text="${msg}" th:href="@{/login.html}" class="btn btn-outlined">登录/注册</a>
+            <a style="visibility: hidden" th:style="${visible}" class="btn btn-outlined">个人空间</a>
+            <a style="visibility: hidden" th:style="${visible}" class="btn btn-outlined">退出账号</a>
+        </div>
+        <div class="menu-icon">
+            <span> </span>
+      </div>
+    </nav>
+
+    <div id="video-container">
+        <div class="video-overlay"></div>
+        <div class="video-content">
+            <div class="inner">
+                <form class="destinations-form">
+                    <div class="input-line">
+                        <input style="width: 500px" type="text" name="destination" value="" class="form-input check-value" placeholder="在此地址栏中搜索图片" />
+                        <button type="button" name="destination-submit" class="form-submit btn btn-special">搜索图片</button>
+                    </div>
+                 </form>
+                <br>
+                <br>
+                <br>
+              <p>每一张照片 都是科信的标本</p>
+              <p>每一张照片 都是源于科信</p>
+                <div class="scroll-icon">
+                    <a class="scrollTo" data-scrollTo="portfolio" href="#"><img src="homepagejc/img/scroll-icon.png" alt="" th:src="@{/homepagejc/img/scroll-icon.png}"></a>
+                </div>
+                <br>
+                <br>
+                <br>
+                <h1><em>欢迎来到</em>摄影世界</h1>
+            </div>
+        </div>
+        <video autoplay loop muted>
+            <source src="homepagejc/indexbg.mp4" th:src="@{/homepagejc/indexbg.mp4}" type="video/mp4" />
+        </video>
+    </div>
+
+
+    <div class="full-screen-portfolio" id="portfolio">
+        <div class="container-fluid">
+            <div class="col-md-4 col-sm-6" ng-repeat="photo in photos">
+                <input type="hidden" id="photoaddress" value="{{ photo.bigaddress }}">
+                <div class="portfolio-item">
+                    <a href="{{ photo.bigaddress }}" data-lightbox="image-1"><div class="thumb">
+                        <div class="hover-effect">
+                            <div class="hover-content">
+                                <h1>点赞数：{{ photo.likeCount }}</h1>
+                                <p class="bg-warning">相关描述：{{ photo.illustration }}&nbsp;&nbsp;&nbsp;<a class="text-success btn" href="upDownLoad/downLoadImage?photoPath={{photo.bigaddress}}">下载</a>&nbsp;&nbsp;&nbsp;<a class="text-success btn" href="#">收藏</a></p>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img ng-src="{{ photo.address }}">
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <p>Copyright &copy; 2020 Company 毕设.com</p>
+            </div>
+        </div>
+    </footer>
+
+
+      <!-- Modal button -->
+    <div class="popup-icon">
+      <button id="modBtn" class="modal-btn"><img src="homepagejc/img/contact-icon.png" th:src="@{/homepagejc/img/contact-icon.png}" alt=""></button>
+    </div>  
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <!-- Modal Content -->
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h3 class="header-title">如有问题，请反馈给我们</h3>
+          <div class="close-btn"><img src="homepagejc/img/close_contact.png" th:src="@{/homepagejc/img/close_contact.png}" alt=""></div>
+        </div>
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <div class="col-md-6 col-md-offset-3">
+            <form id="contact" action="email/send" method="post">
+                <div class="row">
+                    <div class="col-md-12">
+                      <fieldset>
+                        <input name="textEmail" type="email" class="form-control" id="email" placeholder="你的邮箱..." required="">
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <textarea name="emailMessage" rows="6" class="form-control" id="message" placeholder="你所要反馈的内容..." required></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="btn">点击发送</button>
+                      </fieldset>
+                    </div>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <section class="overlay-menu">
+      <div class="container">
+        <div class="row">
+          <div class="main-menu">
+              <ul>
+                  <li>
+                      <a href="index.html">自然风景摄影</a>
+                  </li>
+                  <li>
+                      <a href="masonry.html">生活当家摄影</a>
+                  </li>
+                  <li>
+                      <a href="grid.html">街拍美女摄影</a>
+                  </li>
+                  <li>
+                      <a href="blog.html">城市角落摄影</a>
+                  </li>
+                  <li>
+                      <a href="single-post.html">战争摄影</a>
+                  </li>
+                  <li>
+                    <a href="about.html">关于我们</a>
+                </li>
+              </ul>
+              <p>与你一起打开摄影世界。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>window.jQuery || document.write('<script src="homepagejc/js/vendor/jquery-1.11.2.min.js" th:src="@{/homepagejc/js/vendor/jquery-1.11.2.min.js}"><\/script>')</script>
+
+    <script src="homepagejc/js/vendor/bootstrap.min.js" th:src="@{/homepagejc/js/vendor/bootstrap.min.js}"></script>
+    
+    <script src="homepagejc/js/plugins.js" th:src="@{/homepagejc/js/plugins.js}"></script>
+    <script src="homepagejc/js/main.js" th:src="@{/homepagejc/js/main.js}"></script>
+
+    
+</body>
+</html>

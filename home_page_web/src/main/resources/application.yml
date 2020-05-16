@@ -1,0 +1,25 @@
+server:
+  port: 8081
+dubbo:
+  application:
+    name: home_page_web
+  registry:
+    address: zookeeper://192.168.112.129:2181
+  scan:
+    base-packages: com.example.homepage.controller
+  consumer:
+    timeout: 20000
+
+spring:
+  thymeleaf:
+    cache: false
+
+  resources:
+    static-locations: classpath:/static/,classpath:/templates/
+
+---
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 3MB

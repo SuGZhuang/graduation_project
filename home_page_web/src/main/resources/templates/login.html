@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>登录</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--图标样式-->
+<link rel="stylesheet" type="text/css" href="loginjc/fonts/font-awesome-4.7.0/css/font-awesome.min.css" th:href="@{/loginjc/fonts/font-awesome-4.7.0/css/font-awesome.min.css}">
+
+<!--布局框架-->
+<link rel="stylesheet" type="text/css" href="loginjc/css/util.css" th:href="@{/loginjc/css/util.css}">
+
+<!--主要样式-->
+<link rel="stylesheet" type="text/css" href="loginjc/css/main.css" th:href="@{/loginjc/css/main.css}">
+
+</head>
+
+<body>
+
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100 p-t-190 p-b-30">
+                <form class="login100-form validate-form" action="auth/login" method="post">
+                    <div class="login100-form-avatar">
+                        <img src="loginjc/images/avatar-01.jpg" th:src="@{/loginjc/images/avatar-01.jpg}" alt="AVATAR">
+                    </div>
+
+                    <span class="login100-form-title p-t-20 p-b-45">Hello</span>
+
+                    <div class="wrap-input100 validate-input m-b-10" data-validate="请输入用户名">
+                        <input class="input100" type="text" name="uname" placeholder="用户名" autocomplete="off">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-user"></i>
+                        </span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input m-b-10" data-validate="请输入密码">
+                        <input class="input100" type="password" name="upassword" placeholder="密码">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-lock"></i>
+                        </span>
+                    </div>
+
+                    <div class="container-login100-form-btn p-t-10">
+                        <button class="login100-form-btn">登 录</button>
+                    </div>
+
+                    <div class="text-center w-full p-t-25 p-b-230">
+                        <a href="index.html" class="txt1">返回到首页</a>
+                    </div>
+
+                    <div class="text-center w-full">
+                        <a class="txt1" href="register.html" th:href="@{/register.html}">
+                            立即注册
+                            <i class="fa fa-long-arrow-right"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="loginjc/js/jquery-1.12.4.min.js" th:src="@{/loginjc/js/jquery-1.12.4.min.js}"></script>
+    <script src="loginjc/js/main.js" th:src="@{/loginjc/js/main.js}"></script>
+
+</body>
+</html>

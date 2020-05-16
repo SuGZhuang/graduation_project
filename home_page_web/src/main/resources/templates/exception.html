@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>提示页面</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="errorjc/css/bootstrap.min.css" th:href="@{/errorjc/css/bootstrap.min.css}">
+      <!-- style css -->
+      <link rel="stylesheet" href="errorjc/css/style.css" th:href="@{/errorjc/css/style.css}">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="errorjc/css/responsive.css" th:href="@{/errorjc/css/responsive.css}">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout template2">
+      
+      <!-- header -->
+      <div class="header">
+         <div class=" container">
+           <div class="row">
+              <div class="col-md-12">
+                 <a class="logo" href="index.html"><img src="errorjc/images/logo.png" th:src="@{/errorjc/images/logo.png}" alt="#"/></a>
+              </div>
+           </div>
+        </div>
+      </div>
+      <!-- end header -->
+      <!-- mobile_section -->
+      <div class="mobile_section">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="demo_box text_align_center margino">
+                     <h1 th:text="${msg}">网络崩溃啦！请稍后再试。</h1>
+                     <figure><img src="errorjc/images/demo2.png" th:src="@{/errorjc/images/demo2.png}" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-12">
+                  <div class="creative text_align_center">
+                     <span>页面 </span>
+                     <p>The page you requested can not be found in our system</p>
+                     <a class="read_more" href="login.html" th:href="@{/login.html}">去登录</a>
+                     <a href="index.html" th:href="@{/index.html}">返回首页</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end mobile_section -->
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="copyright darkb">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>© 2020 All Rights 毕设</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="errorjc/js/jquery.min.js" th:src="@{/errorjc/js/jquery.min.js}"></script>
+      <script src="errorjc/js/bootstrap.bundle.min.js" th:src="@{/errorjc/js/bootstrap.bundle.min.js}"></script>
+      <script src="errorjc/js/custom.js" th:src="@{/errorjc/js/custom.js}"></script>
+   </body>
+</html>

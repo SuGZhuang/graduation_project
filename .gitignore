@@ -1,0 +1,14 @@
+# Project exclude paths
+/first_exhibition_area_interface/target/
+/first_exhibition_area_service/target/
+/first_exhibition_area_web/target/
+/home_page_interface/target/
+/home_page_service/target/
+/home_page_web/target/
+/project_pojo/target/
+/second_exhibition_area_interface/target/
+/second_exhibition_area_service/target/
+/second_exhibition_area_web/target/
+/third_exhibition_area_interface/target/
+/third_exhibition_area_service/target/
+/third_exhibition_area_web/target/
