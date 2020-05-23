@@ -22,13 +22,6 @@
         <module name="third_exhibition_area_service" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="home_page" target="11" />
-      <module name="home_page_controller" target="11" />
-      <module name="home_page_dao" target="11" />
-      <module name="home_page_pojo" target="11" />
-      <module name="project_dao" target="11" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -36,14 +29,9 @@
       <module name="first_exhibition_area_service" options="-parameters" />
       <module name="first_exhibition_area_web" options="-parameters" />
       <module name="graduation_project" options="-parameters" />
-      <module name="home_page" options="-parameters" />
-      <module name="home_page_controller" options="-parameters" />
-      <module name="home_page_dao" options="-parameters" />
       <module name="home_page_interface" options="-parameters" />
-      <module name="home_page_pojo" options="-parameters" />
       <module name="home_page_service" options="-parameters" />
       <module name="home_page_web" options="-parameters" />
-      <module name="project_dao" options="-parameters" />
       <module name="project_pojo" options="-parameters" />
       <module name="second_exhibition_area_interface" options="-parameters" />
       <module name="second_exhibition_area_service" options="-parameters" />
