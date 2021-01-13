@@ -26,7 +26,6 @@ public class UpDownLoadController {
 
         String substring = replace.substring(replace.lastIndexOf("\\"));
         String filename = substring.substring(1);
-
         File file = new File(realPath+replace);
         HttpHeaders headers = new HttpHeaders();
         headers.setContentDispositionFormData("attachment", filename);

@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/first_exhibition_area_interface" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/first_exhibition_area_interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/first_exhibition_area_service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/first_exhibition_area_service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/first_exhibition_area_web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/first_exhibition_area_web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/home_page_interface" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/home_page_interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/home_page_service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/home_page_service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/home_page_web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/home_page_web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project_pojo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/project_pojo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/second_exhibition_area_interface" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/second_exhibition_area_interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/second_exhibition_area_service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/second_exhibition_area_service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/second_exhibition_area_web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/second_exhibition_area_web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/third_exhibition_area_interface" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/third_exhibition_area_interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/third_exhibition_area_service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/third_exhibition_area_service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/third_exhibition_area_web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/third_exhibition_area_web/src/main/java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>

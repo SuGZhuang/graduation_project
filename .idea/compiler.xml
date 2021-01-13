@@ -8,17 +8,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="second_exhibition_area_interface" />
         <module name="second_exhibition_area_web" />
+        <module name="home_page_web" />
         <module name="third_exhibition_area_web" />
         <module name="first_exhibition_area_web" />
         <module name="first_exhibition_area_interface" />
         <module name="first_exhibition_area_service" />
         <module name="home_page_service" />
         <module name="home_page_interface" />
+        <module name="home_page_controller" />
         <module name="second_exhibition_area_service" />
         <module name="project_pojo" />
         <module name="third_exhibition_area_interface" />
         <module name="home_page_pojo" />
-        <module name="home_page_web" />
         <module name="third_exhibition_area_service" />
       </profile>
     </annotationProcessing>
@@ -29,6 +30,7 @@
       <module name="first_exhibition_area_service" options="-parameters" />
       <module name="first_exhibition_area_web" options="-parameters" />
       <module name="graduation_project" options="-parameters" />
+      <module name="home_page_controller" options="-parameters" />
       <module name="home_page_interface" options="-parameters" />
       <module name="home_page_service" options="-parameters" />
       <module name="home_page_web" options="-parameters" />
