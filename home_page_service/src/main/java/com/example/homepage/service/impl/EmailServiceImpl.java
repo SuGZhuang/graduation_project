@@ -30,7 +30,6 @@ public class EmailServiceImpl implements EmailService {
 
         javaMailSender.send(simpleMailMessage);
 
-
     }
 
 
