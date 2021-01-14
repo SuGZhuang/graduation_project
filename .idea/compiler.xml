@@ -8,7 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="second_exhibition_area_interface" />
         <module name="second_exhibition_area_web" />
-        <module name="home_page_web" />
         <module name="third_exhibition_area_web" />
         <module name="first_exhibition_area_web" />
         <module name="first_exhibition_area_interface" />
@@ -20,6 +19,7 @@
         <module name="project_pojo" />
         <module name="third_exhibition_area_interface" />
         <module name="home_page_pojo" />
+        <module name="home_page_web" />
         <module name="third_exhibition_area_service" />
       </profile>
     </annotationProcessing>
